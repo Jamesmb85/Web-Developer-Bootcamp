@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know. -->
+<html>
+<!-- This element wraps all the content on the entire page, and is sometimes known as the root element. -->
+<head>
+	<!-- If you want your bootstrap styled website to be responsive on mobile then be sure to add the following meta tag to your <head>  element, above the <title>  tag: -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+
+	<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more -->
+	<title>Purrfect Match</title>
+	<!-- This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it. -->
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet"> 
+
+	<!-- The link below is for the same Bootstap CSS file, but it is maintained at the URL below -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Import Font Awesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<!-- Style sheet -->
+	<link rel="stylesheet" type="text/css" href="LandingStyles.css">
+
+</head>
+<body>
+<!-- This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. -->
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Purrfect Match</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="#">About</a></li>
+	        <li><a href="#">Contact</a></li>
+	      </ul>
+	 
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Signup <i class="fas fa-user-plus"></i> </a> </li>
+	        <li><a href="#">LogIn <i class="fas fa-user"></i> </a> </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+	
+	<!-- A button inside a containter. It takes up all 12 spaces in the row -->
+	<!-- The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS. As a "pure" container, the <div> element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on. -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Putting these elements in a div so we can center them all at the same time -->
+				<div class="content">
+					<h1>Purrfect Match</h1>
+					<h3>The only Human-Feline dating app</h3>
+					<hr>
+					<button class="btn btn-default btn-lg"> <i class="fas fa-paw"></i> Get Started!</button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- jquery cdn -->
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

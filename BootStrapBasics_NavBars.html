@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know. -->
+<html>
+<!-- This element wraps all the content on the entire page, and is sometimes known as the root element. -->
+<head>
+	<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more -->
+	<title>Bootstrap NavBars</title>
+	<!-- This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it. -->
+	<!-- THe link below is for the bootstrap file on my computer. -->
+	<!-- <link rel="stylesheet" type="text/css" href="Bootstrap.css"> --> 
+
+	<!-- The link below is for the same Bootstap CSS file, but it is maintained at the URL below -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<!-- This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+				<div class="navbar-header">
+					<!-- Hamburger -->
+					<!-- data-target="#bs-example-navbar-collapse-1" has to match the id= below so theyare on of the icon bars -->
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       				 	<span class="sr-only">Toggle navigation</span>
+       					 <span class="icon-bar"></span>
+       				 	<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+     			 	</button>
+     			 	<!-- Hamburger -->
+					<a href="https://www.google.com" class="navbar-brand">Home</a>
+				</div>
+
+				 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- whatever is in this div will be collapse when we hit mobile size -->
+					<!-- Navbar left -->
+					<div class="nav navbar-nav">
+						<li><a href="https://www.yahoo.com">Yahoo</a></li>
+						<li><a href="https://www.amazon.com/">Amazon</a></li>
+					</div>
+
+				<!-- Using ul foe the container and not the div -->
+					<ul class="nav navbar-nav` navbar-right">
+						<li><a href="https://www.walmart.com/">Walmart</a></li>
+						<li><a href="https://www.udemy.com/">Udemy</a></li>
+				
+					</ul>	
+				</div>
+
+		</div>
+
+	</nav>
+	
+
+
+
+	<!-- Boostrap Navbar. Will include javascript file to get dropdown to work -->
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- whatever is in this div will be collapse when we hit mobile size -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</nav>
+
+
+	
+	
+</body>
+</html>

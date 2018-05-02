@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know. -->
+<html>
+<!-- This element wraps all the content on the entire page, and is sometimes known as the root element. -->
+<head>
+	<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more -->
+	<title></title>
+	<!-- This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it. -->
+</head>
+<body>
+<!-- This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. -->
+	<h1>Register</h1>
+
+
+	<!-- The HTML <form> element represents a document section that contains interactive controls to submit information to a web server. -->
+	<!--action - The URI of a program that processes the form information. This value can be overridden by a formaction attribute on a <button> or <input> element.-->
+	<form>
+		<!-- The HTML <label> element represents a caption for an item in a user interface. -->
+		<!-- for - The id of a labelable form-related element in the same document as the label element. The first such element in the document with an ID matching the value of the for attribute is the labeled control for this label element. -->
+		<!-- required - is a presence validation. Meaning something needs to be there -->
+		<label for="First">First Name:</label>
+		<input id="First" type="text" placeholder="John" required="">
+
+		<label for="Last">First Name:</label>
+		<input id="Last" type="text" placeholder="Smith" required="">
+
+		<!-- The HTML <br> element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. -->
+		<br>
+
+
+		<!-- Using the same Name =, means they are connected and you can only choose one -->
+		<!-- Under the name Gender, store the value Man -->
+		<label>Male</label>
+		<input id="Male" type="radio" name="Gender" value="Man">
+		
+		<!-- Under the name Gender, store the value Man -->
+		<label>Female</label>
+		<input id="Female" type="radio" name="Gender" value="Woman">
+
+		<!-- Under the name Gender, store the value Man -->
+		<label>Other</label>
+		<input id="Other" type="radio" name="Gender" value="Other">
+
+
+		<!-- The HTML <br> element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. -->
+		<br>
+
+
+		<!-- The HTML <label> element represents a caption for an item in a user interface. -->
+		<!-- for - The id of a labelable form-related element in the same document as the label element. The first such element in the document with an ID matching the value of the for attribute is the labeled control for this label element. -->
+		<!-- required - is a presence validation. Meaning something needs to be there -->
+		<label for="Email">Email:</label>
+		<input id="Email" type="Email" placeholder="Your Email" required="">
+
+		<label for="Password">Password:</label>
+		<input id="Password" type="Password" placeholder="Your Password" required="" minlength="5" maxlength="10">
+
+
+		<!-- The HTML <br> element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. -->
+		<br>
+
+		<label>Birthday:</label>
+		<!-- The HTML <select> element represents a control that provides a menu of options: -->
+		<select name="Month">
+			<!-- The HTML <option> element is used to define an item contained in a <select>, an <optgroup>, or a <datalist> element. As such, <option> can represent menu items in popups and other lists of items in an HTML document. -->
+			<option>Month</option>
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option>
+		</select>
+
+		<select name="Day">
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+
+		<select name="Year">
+			<option>Year</option>
+			<option>2018</option>
+			<option>2017</option>
+			<option>2016</option>
+		</select>
+
+		<!-- The HTML <br> element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. -->
+		<br>
+
+
+		<label>I agree to the terms and conditions</label>
+		<input id="checkbox" type="checkbox">
+
+		<!-- The HTML <br> element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. -->
+		<br>
+
+		<input type="submit">
+	</form>
+</body>
+</html>

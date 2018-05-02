@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know. -->
+<html>
+<!-- This element wraps all the content on the entire page, and is sometimes known as the root element. -->
+<head>
+	<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more -->
+	<meta charset="UTF-8">
+	<title>Selectors Exercise</title>
+	<!-- This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it. -->
+	<link rel="stylesheet" type="text/css" href="selectorstemplate.css">
+</head>
+<body>
+<!-- This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. -->
+	 <h1>Selectors Exercise</h1>
+
+	<p>PARAGRAPH NOT INSIDE A DIV</p>
+	
+	<!-- This text is group in the same container -->
+	<!-- The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS. As a "pure" container, the <div> element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on. -->
+	<div>
+	  <p class="hello">I am a paragraph with a class</p>
+	  <p id="special">I am a paragraph with an ID</p>
+
+	  <h2>I am an awesome h2</h2>
+  
+  
+ 	 <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever.</p>
+
+	</div>
+
+
+	<!-- This text is group in the same container -->
+	<!-- The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS. As a "pure" container, the <div> element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on. -->
+	<div>
+  		<h2>Things I need to do</h2>
+
+  		<ul>
+    		<li>Walk Dog <input type="checkbox" checked> </li>
+    		<li>Feed Dog <input type="checkbox" checked> </li>
+    		<li>Wash Dog <input type="checkbox"></li>
+  		</ul>
+	</div>
+
+
+	<!-- This text is group in the same container -->
+	<!-- The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS. As a "pure" container, the <div> element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on. -->
+	<div>
+  		<h2>I am another awesome h2</h2>
+
+  		<p>Cardigan Tumblr mlkshk, fap tilde 3 wolf moon Portland. Heirloom health goth taxidermy blog lo-fi selfies, post-ironic master cleanse fingerstache normcore. Kickstarter plaid twee, bespoke single-origin coffee sustainable lo-fi vinyl Pinterest pork belly <em>cronut skateboard</em> 3 wolf moon. Normcore single-origin coffee salvia, bespoke Austin swag Godard before they sold out kogi disrupt locavore. Lumbersexual Shoreditch Vice, artisan American Apparel master cleanse yr salvia vegan. Bespoke letterpress heirloom kale chips deep v four loko. Lomo sustainable put a bird on it trust fund post-ironic</p>
+
+  		<p>I'm the second paragraph inside this div!</p>
+	</div>
+
+	<p>PARAGRAPH NOT INSIDE A DIV</p>
+
+
+	<!-- This text is group in the same container -->
+	<!-- The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS. As a "pure" container, the <div> element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on. -->
+	<div>
+  		<h2>A less awesome h2</h2>
+
+  		<p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever</p>
+
+  		<p>One last paragraph here!</p>
+
+
+		<!-- The HTML <a> element (or anchor element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL. -->
+		<!-- href= Contains a URL or a URL fragment that the hyperlink points to. -->
+  		<a href="http://www.facebook.com">I am a link to facebook</a>
+  		<a href="http://www.facebook.com">I am another link to facebook</a>
+  	
+  		<br>
+  		<!-- The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user. -->
+		<!-- placeholder - A hint to the user of what can be entered in the control . The placeholder text must not contain carriage returns or line-feeds. -->
+		<!-- method - The HTTP method that the browser uses to submit the form. Possible values are: -->
+		<!-- post: Corresponds to the HTTP POST method ; form data are included in the body of the form and sent to the server.
+		 get: Corresponds to the HTTP GET method; form data are appended to the action attribute URI with a '?' as separator, and the resulting URI is sent to the server. Use this method when the form has no side-effects and contains only ASCII characters. -->
+  		<input type="text" name="name" /><label> Name</label><br/>
+  		<!-- The HTML <label> element represents a caption for an item in a user interface. -->
+		<!-- for - The id of a labelable form-related element in the same document as the label element. The first such element in the document with an ID matching the value of the for attribute is the labeled control for this label element. -->
+		<!-- required - is a presence validation. Meaning something needs to be there -->
+  		<input type="password" name="password" /><label> Password</label><br/>
+
+	</div>
+
+	<p>PARAGRAPH NOT INSIDE A DIV</p>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know. -->
+<html>
+<!-- This element wraps all the content on the entire page, and is sometimes known as the root element. -->
+<head>
+	<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more -->
+	<title></title>
+	<!-- This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it. -->
+
+	<!-- The link below is for the same Bootstap CSS file, but it is maintained at the URL below -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style type="text/css">
+		.purple{
+			background: yellow;
+			border: 1px solid purple;
+		}
+
+		.orange{
+			background: pink;
+			border: 1px dashed red;
+		}
+
+		.teal{
+			background: teal;
+			border: 1px solid teal;
+		}
+	</style>
+</head>
+<body>
+<!-- This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. -->
+	<!-- Grid of two columns -->
+<!-- 	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 purple"> Column One takes 6 grids</div>
+			<div class="col-lg-6 purple"> Column Two takes 6 grids</div>
+		</div>
+	</div>
+ -->
+	<!-- Grid of three columns -->
+	<!-- Once i hit medium, each line is 3 units
+		Once i hit small, each line is 6 units
+		Once i hit extra small, rack line is 12 units -->
+	<div class="container">
+		<div class="row">
+			<!-- Add a nested grid to the first section -->
+			<div class="col-lg-3 col-md-3 col-sm-6 orange"> 
+				<div class="row">
+					<div class="col-lg-6 teal">Left side</div>
+					<div class="col-lg-6 teal">Right side</div>
+				</div> 
+			</div>
+			<!-- Add a nested grid to the first section -->
+			<div class="col-lg-3 col-md-3 col-sm-6 orange"> Column Two takes 3 grids</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 orange"> Column three takes 3 grids</div>
+			<!-- Add 6 nested grids to the last section -->
+			<div class="col-lg-3 col-md-3 col-sm-6 orange"> 
+				<div class="row">
+					<div class="col-lg-2 teal">Side 1</div>
+					<div class="col-lg-2 teal">Side 2</div>
+					<div class="col-lg-2 teal">Side 3</div>
+					<div class="col-lg-2 teal">Side 4</div>
+					<div class="col-lg-2 teal">Side 5</div>
+					<div class="col-lg-2 teal">Side 6</div>
+				</div> 
+			</div>
+			<!-- Add 6 nested grids to the last section -->
+		</div>
+	</div>
+
+	<!-- 4 different sizes in grid system -->
+	<!-- Grid of 12 columns -->
+	<!-- Once i hit the Medium devices breakpoint, i want each line to take up 3 grids going across -->
+<!-- 	<div class="container">
+		<div class="row">
+			<div  col-md-3 purple"> Column 1</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 2</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 3</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 4</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 5</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 6</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 7</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 8</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 9</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 10</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 11</div>
+			<div class="col-lg-1 col-md-3 purple"> Column 12</div>
+		</div>
+	</div> -->
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know. -->
+<html>
+<!-- This element wraps all the content on the entire page, and is sometimes known as the root element. -->
+<head>
+	<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more -->
+	<title>Pokemon Chart</title>
+	<!-- This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it. -->
+</head>
+<body>
+<!-- This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. -->
+	<h1>First Gen Pokemon Chart</h1>
+
+
+	<!-- The HTML <table> element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. -->
+	<table border = "1">
+		<!-- The HTML <thead> element defines a set of rows defining the head of the columns of the table. -->
+		<thead>
+			<!-- The HTML <tr> element defines a row of cells in a table. -->
+			<tr>
+				<!-- The HTML <th> element defines a cell as header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes. -->
+				<th>Image</th>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Evolves Into</th>	
+			</tr>
+			
+		</thead>
+
+		<tbody>
+			<!-- The HTML <tr> element defines a row of cells in a table. -->
+			<tr>
+				<!-- The HTML <td> element defines a cell of a table that contains data. It participates in the table model. -->
+				<!-- The HTML <img> element embeds an image into the document.
+				src - The image URL. This attribute is mandatory for the <img> element. On browsers supporting srcset, src is treated like a candidate image with a pixel density descriptor 1x unless an image with this pixel density descriptor is already defined in srcset, or unless srcset contains 'w' descriptors. -->	
+				<td> <img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"> </td>
+				<td>Bulbasaur</td>
+				<td>Grass/Poison</td>
+				<!-- The HTML <a> element (or anchor element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL. -->
+				<!-- href= Contains a URL or a URL fragment that the hyperlink points to. -->
+				<td> <a href="http://pokemon.wikia.com/wiki/Ivysaur"> Ivysaur</a> </td>
+			</tr>
+				<td> <img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"> </td>
+				<td>Charmander</td>
+				<td>Fire</td>
+				<td> <a href="http://pokemon.wikia.com/wiki/Charmeleon"> Charmeleon</a> </td>
+			<tr></tr>
+				<td> <img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"> </td>
+				<td>Squirtle</td>
+				<td>Water</td>
+				<td> <a href="http://pokemon.wikia.com/wiki/Wartortle"> Wartortle</a> </td>
+			<tr></tr>
+		</tbody>
+
+
+	</table>
+
+
+</body>
+</html>

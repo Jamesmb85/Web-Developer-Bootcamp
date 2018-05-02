@@ -1,0 +1,74 @@
+/*for hexadecimal colors, it goes #_ _ _ _ _ _ 
+the first two spaces are how much red
+the second two spaces are how much green
+the last two are how much blue*/
+
+/*These are all element selctors. Meaning all h1 will be effected by the indented code*/
+h1{
+	/*color: orange;*/
+	color: #FF0000; /*FF is the highest number in hexadecimal so the color is all red and no amount of green or blue*/
+
+	/*border has three parts:
+	width, color, and style*/
+
+	/*border-color: red;
+	border-width: 7px;
+	border-style: dashed;*/
+
+	/*A shortcut to the 3 lines directly above is:*/
+	border: 7px red dashed;
+}
+
+/*These are all element selctors. Meaning all h2 will be effected by the indented code*/
+h2{
+	/*color: green;*/
+	color: #FFFFFF; /*All colors combine is a white color*/
+}
+
+/*These are all element selctors. Meaning all h6 will be effected by the indented code*/
+h6{
+	color: purple;
+}
+
+
+/*These are all element selctors. Meaning all h4 will be effected by the indented code*/
+/*RGB Color system*/
+/*3 ranges from 0 to 255 each. Colors are red, green and blue*/
+
+h4{
+	
+}
+
+/*These are all element selctors. Meaning all h5 will be effected by the indented code*/
+/*RGBA - just like RGB, but fourth value is from 0 to 1 and is determines how transparent the color it*/
+h5{
+	color: rgba(20, 40, 60, .5);
+}
+
+/*These are all element selctors. Meaning all h3 will be effected by the indented code*/
+/*Let's play with the background of h3*/
+h3{
+	background: rgb(200, 255, 100);
+}
+
+/*These aer all element selctors. Meaning all indented code will be effected*/
+/*Let's change the backgound of the whole page*/
+body{
+	background: teal;
+}
+
+/*These aer all element selctors. Meaning all indented code will be effected*/
+/*Let's change background to be a pic of the Boston skyline*/
+body{
+	background: url(https://images.fineartamerica.com/images-medium-large-5/boston-skyline-and-fan-pier-juergen-roth.jpg);
+	/*image isn't big enough so it is tiled and doesn't fit the whole screen*/
+	background-repeat: no-repeat; /*stops the image from being tiled*/
+	background-size: cover; /*makes the image the size of the page*/
+}
+
+/*These aer all element selctors. Meaning all indented code will be effected*/
+/*body{
+	
+	background: teal;
+
+}*/

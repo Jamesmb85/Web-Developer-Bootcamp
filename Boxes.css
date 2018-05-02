@@ -1,0 +1,20 @@
+p{
+
+/*Content - Width and Height*/
+width: 250px;
+height: 250px;
+
+/*Border*/
+border: 2px solid purple;
+
+/*Padding*/
+padding: 100px;
+
+/*Margin*/
+/*margin: 100px;*/
+/*margin: 0 auto 0 auto;*/ /*0 for the top and bottom and auto size for the left and right*/
+margin: 0 auto; /*0 for the top and bottom and auto size for the left and right*/
+margin: 20px 35px 55px 65px; /*top right bottom left*/
+
+}
+

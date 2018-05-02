@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know. -->
+<html>
+<!-- This element wraps all the content on the entire page, and is sometimes known as the root element. -->
+<head>
+	<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more -->
+	<title>Form Demo</title>
+	<!-- This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it. -->
+</head>
+<body>
+<!-- This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. -->
+	<h1>Login</h1>
+
+	<!-- The HTML <form> element represents a document section that contains interactive controls to submit information to a web server. -->
+	<!--action - The URI of a program that processes the form information. This value can be overridden by a formaction attribute on a <button> or <input> element.-->
+	<!-- <form action="https://www.wikipedia.org/" method="get"> -->
+		<!-- The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user. -->
+		<!-- placeholder - A hint to the user of what can be entered in the control . The placeholder text must not contain carriage returns or line-feeds. -->
+		<!-- method - The HTTP method that the browser uses to submit the form. Possible values are: -->
+		<!-- post: Corresponds to the HTTP POST method ; form data are included in the body of the form and sent to the server.
+			 get: Corresponds to the HTTP GET method; form data are appended to the action attribute URI with a '?' as separator, and the resulting URI is sent to the server. Use this method when the form has no side-effects and contains only ASCII characters. -->
+
+		<!-- The HTML <label> element represents a caption for an item in a user interface. -->
+<!-- 		<label>
+			Userame:
+			<input type="text" placeholder="Username">
+		</label>
+
+		<label>
+			Password:
+			<input type="password" placeholder="Password">
+		</label>
+				
+		<input type="submit">
+	</form> -->
+
+
+	<!-- Alternative way to create labels is below -->
+	<!-- The HTML <form> element represents a document section that contains interactive controls to submit information to a web server. -->
+	<!--action - The URI of a program that processes the form information. This value can be overridden by a formaction attribute on a <button> or <input> element.-->
+	<form action="https://www.wikipedia.org/" method="get">
+		<!-- The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user. -->
+		<!-- placeholder - A hint to the user of what can be entered in the control . The placeholder text must not contain carriage returns or line-feeds. -->
+		<!-- method - The HTTP method that the browser uses to submit the form. Possible values are: -->
+		<!-- post: Corresponds to the HTTP POST method ; form data are included in the body of the form and sent to the server.
+			 get: Corresponds to the HTTP GET method; form data are appended to the action attribute URI with a '?' as separator, and the resulting URI is sent to the server. Use this method when the form has no side-effects and contains only ASCII characters. -->
+
+		<!-- The HTML <label> element represents a caption for an item in a user interface. -->
+		<!-- for - The id of a labelable form-related element in the same document as the label element. The first such element in the document with an ID matching the value of the for attribute is the labeled control for this label element. -->
+		<!-- required - is a presence validation. Meaning something needs to be there -->
+		<label for="Userame">Userame:</label>
+		<input id="Userame" type="text" placeholder="Username" required="">
+
+		<label for="Password">Password:</label>
+		<input id="Password" type="password" placeholder="Password" required="">
+
+		<label for="Email">Email:</label>
+		<input id="Email" type="Email" placeholder="Email" required="">
+				
+		<input type="submit">
+	</form>
+
+
+
+	
+
+</body>
+</html>

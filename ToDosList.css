@@ -1,0 +1,68 @@
+/*These are all element selectors. Meaning all li will be effected by the indented code*/
+li{
+	/*border-color: red;
+	border-width: 3px;
+	border-style: solid;*/
+
+	/*A shortcut to the 3 lines directly above is:*/
+	border: 3px red solid;
+}
+
+
+/*Using the id selection, we can make changes specific to that id*/
+#checkbox1{
+	background-color: pink;
+}
+
+
+/*Using the id selection, we can make changes specific to that id*/
+/*RGB Color system*/
+/*3 ranges from 0 to 255 each. Colors are red, green and blue*/
+#checkbox2{
+	background-color: purple;
+	color: rgb(0, 255, 0); /*All green*/
+}
+
+/*Using the id selection, we can make changes specific to that id*/
+/*RGBA - just like RGB, but fourth value is from 0 to 1 and is determines how transparent the color it*/
+#checkbox3{
+	background-color: grey;
+	color: rgba(20, 40, 60, .5);
+}
+
+
+/*Using the class selector to select all elements in a given class*/
+.programming{
+	background-color: magenta;
+	text-decoration: line-through;
+}
+
+
+
+/*Specificity Levels*/
+/*Lowest - Type Selection*/
+/*li{
+
+}
+
+li a{
+
+}
+
+li + a{
+
+}*/
+
+/*Higher - Class, Attribute, Pseudo-Class*/
+/*.hello{
+
+}
+
+input[type = "text"]
+
+a:hover
+
+input:checked*/
+
+/*Highest - ID Selectors*/
+/*#hello*/

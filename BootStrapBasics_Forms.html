@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know. -->
+<html>
+<!-- This element wraps all the content on the entire page, and is sometimes known as the root element. -->
+<head>
+	<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more -->
+	<title>Bootstrap Basics</title>
+	<!-- This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it. -->
+	<!-- THe link below is for the bootstrap file on my computer. -->
+	<!-- <link rel="stylesheet" type="text/css" href="Bootstrap.css"> --> 
+
+	<!-- The link below is for the same Bootstap CSS file, but it is maintained at the URL below -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<!-- This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. -->
+	<h1>Bootstrap Basics</h1>
+
+	<!-- These are all different types of buttons -->
+	<button>Click ME!</button>
+
+	<!-- A success button which is a green color -->
+	<button class="btn btn-success">Click ME!</button>
+
+	<!-- A warning button which is an oragne color and it is large -->
+	<button class="btn btn-warning btn-lg">Click ME!</button>
+
+	<!-- A large a tag  -->
+	<a href="https://www.yahoo.com" class = "btn btn-info btn-lg"></a>
+
+	<!-- A large button that is orange and disabled. -->
+	<button class="btn btn-warning btn-lg" disabled="disabled">Click ME!</button>
+
+
+	<!-- jumbotron and form inside a container -->
+	<div class="container">
+		<div class="jumbotron">
+			<h1>This is a jummbotron</h1>
+			<p>Here is some random text in the jumbotron: jdfhdsialfbsdaljaagggggggggg</p>
+			<!-- A success button which is a green color -->
+			<button class="btn btn-success">Click ME!</button>
+		</div>
+
+		<form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputFile">File input</label>
+		    <input type="file" id="exampleInputFile">
+		    <p class="help-block">Example block-level help text here.</p>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Check me out
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+
+		<!-- Inline Form -->
+		<form class="form-inline">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Name</label>
+		    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail2">Email</label>
+		    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+		  </div>
+		  <button type="submit" class="btn btn-default">Send invitation</button>
+		</form>
+
+	</div>
+
+	
+	
+</body>
+</html>

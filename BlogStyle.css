@@ -1,0 +1,48 @@
+/*Body is an all element selectors.*/
+body{
+	border: 20px solid #bdc3c7;
+	width: 700px;
+	max-width: 80%;
+	margin: 20px auto; /*25px for the top and bottom and auto size for the left and right*/
+	padding: 20px;
+	
+}
+
+h2{
+	padding-left: 5px;
+	color: #2c3e50;
+}
+
+
+/*Make all the <div>'s that are nested inside of the body the following attributes*/
+/*Descendant Selector*/
+body div{
+	
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+/* Give the 1st <p> inside the 1st <div> the following attributes*/
+div:nth-of-type(1) p:nth-of-type(1){
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
+/* Give the 1st <p> inside the 2nd <div> the following attributes*/
+div:nth-of-type(2) p:nth-of-type(1){
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
+
+/* Give everything with the class 'dates' the follownig attributes*/
+/*Using the class selector to select all elements in a given class*/
+.dates{
+	color:#3498db;
+	padding-left: 5px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
