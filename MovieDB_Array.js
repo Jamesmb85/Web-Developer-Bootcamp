@@ -1,5 +1,5 @@
 var movies = [
-	//each index will have it's own object
+	//each index will have it's own object(disctionary)
 	{
 		title: "Black Panther",
 		hasWatched: true,
@@ -25,13 +25,13 @@ for(var a = 0; a < movies.length; a++){
 	
 	//if you watched the movie then the string above changes in the following way
 	if(movies[a].hasWatched){ 
-		result += "watched";
+		result += "watched ";
 	}
 	else{
 		result += "not watched ";
 	}
 	
 	
-	result += "\ "" + movies[a].title + "\" -" + movies[a].rating + " stars";
+	result += "\"" + movies[a].title + "\" -" + movies[a].rating + " stars";
 	console.log(result);
 }
